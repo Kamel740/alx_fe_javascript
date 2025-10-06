@@ -25,7 +25,7 @@ function showRandomQuote(){
 showRandomQuote();
 newQuoteBtn.addEventListener('click', showRandomQuote);
 
-function formContainerAddQuote(){
+function createAddQuoteForm(){
     const formContainer = document.createElement('div');
 
     const quoteInput = document.createElement('input');
@@ -50,7 +50,7 @@ function formContainerAddQuote(){
     addNewQuoteBtn.addEventListener('click',addQuote);
 }
 
-formContainerAddQuote();
+createAddQuoteForm();
 
 function addQuote (){
     const newQuoteText = document.getElementById('newQuoteText');
