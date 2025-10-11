@@ -123,11 +123,12 @@ function jsonExprot(){
 }
 ExportQuotes.addEventListener('click', jsonExprot);
 
-const importFile = document.createElement('input');
-importFile.type = 'file';
-importFile.accept = '.json';
-importFile.id = 'importFile';
-document.body.appendChild(importFile);
+// const importFile = document.createElement('input');
+// importFile.type = 'file';
+// importFile.accept = '.json';
+// importFile.id = 'importFile';
+// document.body.appendChild(importFile);
+const importFile = document.getElementById('importFile');
 
   function importFromJsonFile(event) {
     const fileReader = new FileReader();
