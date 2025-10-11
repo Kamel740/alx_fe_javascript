@@ -108,7 +108,7 @@ function addQuote (){
 }
 
 const ExportQuotes = document.createElement('button');
-ExportQuotes.textContent = 'Export';
+ExportQuotes.textContent = 'Export Quotes';
 document.body.appendChild(ExportQuotes);
 
 function jsonExprot(){
