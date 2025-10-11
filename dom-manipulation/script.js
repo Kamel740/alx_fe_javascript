@@ -107,9 +107,9 @@ function addQuote (){
     document.getElementById('newQuoteCategory').value = '';
 }
 
-const exportBtn = document.createElement('button');
-exportBtn.textContent = 'Export';
-document.body.appendChild(exportBtn);
+const Export Quotes = document.createElement('button');
+Export Quotes.textContent = 'Export';
+document.body.appendChild(Export Quotes);
 
 function jsonExprot(){
     const stringifyQuotes = JSON.stringify(quotes);
@@ -120,7 +120,7 @@ function jsonExprot(){
     htmlLink.download = 'quotes.json';
     htmlLink.click();
 }
-exportBtn.addEventListener('click', jsonExprot);
+Export Quotes.addEventListener('click', jsonExprot);
 
 const importFile = document.createElement('input');
 importFile.type = 'file';
