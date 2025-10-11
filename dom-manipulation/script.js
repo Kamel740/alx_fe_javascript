@@ -107,10 +107,11 @@ function addQuote (){
     document.getElementById('newQuoteCategory').value = '';
 }
 
-const ExportQuotes = document.createElement('button');
-ExportQuotes.textContent = 'Export Quotes';
-document.body.appendChild(ExportQuotes);
+// const ExportQuotes = document.createElement('button');
+// ExportQuotes.textContent = 'Export Quotes';
+// document.body.appendChild(ExportQuotes);
 
+const ExportQuotes = document.getElementById('exportBtn');
 function jsonExprot(){
     const stringifyQuotes = JSON.stringify(quotes);
     const myblob = new Blob([stringifyQuotes],{type: 'application/json'});
